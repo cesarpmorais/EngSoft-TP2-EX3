@@ -32,7 +32,8 @@ test('Testando cadastrar resposta', () => {
   const num_respostas = modelo.get_num_respostas(0);
   expect(num_respostas).toBe(1);
 
-  const respostas = modelo.get_respostas(0); 
+  const respostas = modelo.get_respostas(0);
+  expect(respostas.length).toBe(1);
   expect(respostas[0].texto).toBe('2');
 });
 
